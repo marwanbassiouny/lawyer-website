@@ -1,0 +1,22 @@
+.whoAR img{
+    border-radius: 50%;
+    float: left;
+    height: auto;
+    width : 15vh;
+    margin: 10px 15px;
+  }
+  .whoAR h2{
+    text-align: right;
+  }
+  .navbar-nav span{
+    float: left;
+    font-size: 30px;
+  }
+
+  .navbar img{
+  border-radius: 50%;
+  float: right;
+  height: auto;
+  width : 5vh;
+  margin: 10px 15px;
+  }

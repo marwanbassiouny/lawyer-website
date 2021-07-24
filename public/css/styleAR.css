@@ -1,0 +1,29 @@
+.whoAR img {
+  border-radius: 30%;
+  float: left;
+  height: auto;
+  width : 30vh;
+  margin: 10px 15px;
+}
+.who-about img
+{
+    border-radius: 30%;
+    float: left;
+    height: auto;
+    width : 30vh;
+    margin: 10px 15px;
+  }
+  .whoAR h2{
+    text-align: right;
+  }
+  .navbar-nav span{
+    float: left;
+    font-size: 30px;
+  }
+
+  .navbar img{
+  float: right;
+  height: auto;
+  width : 5vh;
+  margin: 10px 15px;
+  }

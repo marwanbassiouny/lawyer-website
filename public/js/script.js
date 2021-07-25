@@ -1,11 +1,18 @@
 var text;
+const contactform=document.querySelector('.myform')
+let message = document.getElementById("message").value;
+let subject = document.getElementById("Subject").value;
+let Name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let email = document.getElementById("email").value;
 
 function validate(){
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var name=document.getElementById("name").value;
-    var error_message = document.getElementById("error_message");
-    
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  const error_message = document.getElementById("error_message");
+  
     error_message.style.padding = "10px";
     
     if (name.length==0) {
@@ -28,12 +35,31 @@ function validate(){
       error_message.innerHTML = text;
     return true;
   }
+let xhr= new XMLHttpRequest();
+xhr.open('Post','/');
+xhr.setRequestHeader('myform','application/json');
+xhr.onload= function(){
+  console.log(xhr.responseText);
+  if(xhr.responseText=='success'){
+    alert('email sent');
+    Name.value='';
+    email.value='';
+    message.value='';
+    phone.value='';
+    subject.value='';
+  }
+  else{
+  alert('ther is wrong!')
+  }
+
+  
+}
 /*******************************************/
   function validateAR(){
     var phone = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     var error_message = document.getElementById("error_message");
-    var name=document.getElementById("name").value;
+    var name = document.getElementById("name").value;
     
     error_message.style.padding = "10px";
     

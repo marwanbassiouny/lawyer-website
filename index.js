@@ -1,17 +1,18 @@
 const express = require("express");
 const app=express();
 const Path = require("path");
-const bodyParser = require('body-parser')
+var bodyParser = require('body-parser')
 const nodemailer =require('nodemailer');
 
-
+app.use(bodyParser.json());
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.use(express.json());
 
 app.use(express.static("public"));
 
 
 
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
 /***********************************/
 app.get("/",function(req , res){
 res.sendFile(__dirname+"/Home.html")
@@ -54,8 +55,13 @@ app.get("/servicesAR",function(req , res){
 res.sendFile(__dirname+"/servicesAR.html")
 });
 
+/*****************************************************************/
+app.post("/contactus", urlencodedParser, function (req, res) {
 
-app.post("/contactus", function (req, res) {
+    let email=req.body.email;
+    let name = req.body.name;
+    let phone = req.body.phone;
+    let mail_subject = req.body.subject;
     
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -64,13 +70,16 @@ var transporter = nodemailer.createTransport({
       pass: 'marwanis87'
     }
   });
+
+
   var mailOptions = {
-    from: req.body.email,
+    from: 'kmarwan918@gmail.com',
     to: 'marwanbassiouny7@gmail.com',
-    subject: req.body.Subject,
-    text:req.body.name
-    
-    
+    subject: 'mail_subject' ,
+    html :"<p>name: "+ name +"</p>"+ 
+          "<p>phone: " + phone + "</p>"+
+          "<p>email: "+ email + "</p>" + 
+          "<p>subject: " + mail_subject + "</p>",  
   };
   
   transporter.sendMail(mailOptions, function(error, info){
@@ -80,9 +89,50 @@ var transporter = nodemailer.createTransport({
       console.log('Email sent: ' + info.response);
     }
   });
-   
-})
 
+   res.redirect('/contactus');
+});
+
+/********************************************************************/
+// app.post("/contactusAR", urlencodedParser, function (req, res) {
+
+//     let email=req.body.email;
+//     let name = req.body.name;
+//     let phone = req.body.phone;
+//     let mail_subject = req.body.subject;
+ 
+// var transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//       user: 'kmarwan918@gmail.com',
+//       pass: 'marwanis87'
+//     }
+//   });
+
+
+//   var mailOptions = {
+//     from: 'kmarwan918@gmail.com',
+//     to: 'marwanbassiouny7@gmail.com',
+//     subject: 'mail_subject' ,
+//     html :"<p>name: "+ name +"</p>"+ 
+//           "<p>phone: " + phone + "</p>"+
+//           "<p>email: "+ email + "</p>" + 
+//           "<p>subject: " + mail_subject + "</p>",
+    
+    
+    
+//   };
+  
+//   transporter.sendMail(mailOptions, function(error, info){
+//     if (error) {
+//       console.log(error);
+//     } else {
+//       console.log('Email sent: ' + info.response);
+//     }
+//   });
+
+//    res.redirect('/contactusAR');
+// });
   
   
 

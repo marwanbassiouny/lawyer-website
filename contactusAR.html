@@ -36,7 +36,7 @@
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container container-fluid">
-              <img src="./images/1.jpeg" alt="">
+              <img src="./images/logo.png" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -54,21 +54,21 @@
     <div class="wrapper">
         <h2>تواصل معنا</h2>
         <div id="error_message"></div>
-        <form id="myform" onsubmit="return validateAR();">
+        <form  method="POST" action="/contactusAR" id="myform" onsubmit="return validateAR();">
           <div class="input_field">
-              <input type="text" placeholder="الاسم" id="name">
+              <input type="text" placeholder="الاسم" id="name" name="name">
           </div>
           <div class="input_field">
-              <input type="text" placeholder="نوع">
+              <input type="text" placeholder="نوع" name="Subject">
           </div>
           <div class="input_field">
-              <input type="text" placeholder="رقم الهاتف" id="phone">
+              <input type="text" placeholder="رقم الهاتف" id="phone" name="phone" maxlength="11">
           </div>
           <div class="input_field">
-              <input type="text" placeholder="البريد الالكتروني" id="email">
+              <input type="text" placeholder="البريد الالكتروني" id="email" name="email">
           </div>
           <div class="input_field">
-              <textarea placeholder="رسالتك"></textarea>
+              <textarea placeholder="رسالتك" name="message"></textarea>
           </div>
           <div class="btn">
               <input type="submit" value="ارسال">

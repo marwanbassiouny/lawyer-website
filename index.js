@@ -11,9 +11,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-
-
-
 /***********************************/
 app.get("/",function(req , res){
 res.sendFile(__dirname+"/Home.html")
@@ -63,8 +60,9 @@ app.post("/contactus", urlencodedParser, function (req, res) {
     let name = req.body.name;
     let phone = req.body.phone;
     let mail_subject = req.body.Subject;
-    
-var transporter = nodemailer.createTransport({
+    let message = req.body.message;
+
+  var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'kmarwan918@gmail.com',
@@ -78,10 +76,11 @@ var transporter = nodemailer.createTransport({
     to: 'marwanbassiouny7@gmail.com',
     subject: 'mail_subject' ,
     html :"<h2>welcome</h2>"+
-          "<p>name: "+ name +"</p>"+ 
-          "<p>phone: " + phone + "</p>"+
-          "<p>email: "+ email + "</p>" + 
-          "<p>subject: " + mail_subject + "</p>",  
+          "<h3>name: "+ name +"</h3>"+ 
+          "<h3>phone: " + phone + "</h3>"+
+          "<h3>email: "+ email + "</h3>" + 
+          "<h3>subject: " + mail_subject + "</h3>"+
+          "<h3>Message: " + message + "</h3>",  
   };
   
   transporter.sendMail(mailOptions, function(error, info){

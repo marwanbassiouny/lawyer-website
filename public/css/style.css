@@ -96,6 +96,7 @@
   padding: 10px;
   font-size: 14px;
   border: none;
+  width: 80px;
 }
 
 .dropdown {
@@ -114,7 +115,8 @@
 
 .dropdown-content button {
   color: black;
-  padding: 20px;
+  width: 80px;
+  padding: 10px;
   display: block;
 }
 .dropdown-content button{

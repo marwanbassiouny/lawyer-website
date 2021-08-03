@@ -68,6 +68,5 @@ function validate(){
   else if(language === 'english') {
     location.replace("Home")
   }
-    
-  }
+};
 

@@ -9,12 +9,12 @@
 .navbar img{
   float: left;
   height: auto;
-  width : 50px;
-  height: 65px;
+  width : 85px;
+  height: 85px;
  }
 
 .navbar-nav a {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   font-weight: 300;
   padding-right: 10px;
@@ -181,12 +181,18 @@
   background-color: #e8e8e8;
 }
 
-.who img,
-.who-about img{
+.who img{
   border-radius: 30%;
   float: right;
   height: auto;
   width : 30vh;
+  margin: 10px 15px;
+}
+.who-about img{
+  border-radius: 20%;
+  float: right;
+  height: 45vh;
+  width : 50vh;
   margin: 10px 15px;
 } 
 
@@ -198,7 +204,9 @@
 margin-bottom: 20px;
 margin-top: 15px;
 }
-
+.text h1{
+  font-weight: bold;
+}
 .vison {
   display: flex;
   width: 100%;

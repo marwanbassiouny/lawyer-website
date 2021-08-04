@@ -23,14 +23,17 @@ function validate(){
       text = "Please Enter valid Email";
       error_message.innerHTML = text;
       return false;
+      
     }
     
     text = "Thank You";
       error_message.innerHTML = text;
     return true;
+
+    
+    
   }
-
-
+ 
 /*******************************************/
   function validateAR(){
     var phone = document.getElementById("phone").value;

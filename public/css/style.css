@@ -9,8 +9,8 @@
 .navbar img{
   float: left;
   height: auto;
-  width : 85px;
-  height: 85px;
+  width : 73px;
+  
  }
 
 .navbar-nav a {
@@ -21,7 +21,9 @@
   padding-left: 10px;
   text-decoration: none;
 }
-
+.navbar .container{
+  bottom: 50px;
+}
 .navbar-nav a:hover {
   color: gold;
   transition: 0.8s;

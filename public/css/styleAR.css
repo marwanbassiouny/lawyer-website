@@ -1,27 +1,17 @@
-.whoAR img {
+.home-imgAR {
   border-radius: 15%;
   float: left;
-  height: 25vh;
-  width : 20%;
+  height: 25%;
+  width : 25%;
   margin: 15px 15px;
 }
-.who-about img
-{
+.about-imgAR{
     border-radius: 20%;
     float: left;
     height: auto;
-    height: 45vh;
-    width : 50vh;
-    margin: 10px 15px;
+    height: 35%;
+    width : 35%;
+    margin: 15px 15px;
   }
-  .whoAR h2{
-    text-align: right;
-  }
-  
 
-  .navbar img{
-  float: right;
-  height: auto;
-  width : 73px;
   
-  }

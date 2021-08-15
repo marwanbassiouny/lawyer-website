@@ -9,10 +9,61 @@
 .navbar img{
   float: left;
   height: auto;
-  width : 73px;
+  width : 75px;
   
  }
+/* 
+.carouselspace img{
+  object-fit: fill;
+  height:565px; 
+}
+.carousel-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
 
+.text-carousel::before{
+  opacity: 1;
+}
+.carousel-text::after{
+  background-color: #13e961;
+  opacity: 1;
+  transition: .1s; 
+} */
+
+/* .wrapperr {
+ 
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.typing-demo {
+  
+  width: 7ch;
+  animation: typing 3s steps(7), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 4em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} */
 .navbar-nav a {
   font-size: 25px;
   color: black;
@@ -21,9 +72,7 @@
   padding-left: 10px;
   text-decoration: none;
 }
-.navbar .container{
-  bottom: 50px;
-}
+
 .navbar-nav a:hover {
   color: gold;
   transition: 0.8s;
@@ -37,6 +86,7 @@
   background-color:#282d32;
   display: flex;
   align-items: center;
+  position: relative;
   
 }
  .header .iconbtnn{
@@ -106,7 +156,7 @@
   float: right;
 }
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -128,15 +178,16 @@
   background-color: whitesmoke;
   transition: .5s;
   color:rgb(235, 208, 60);
-}
+} */
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 .dropdown:hover .dropbtn {
   background-color: gold;
   transition: 1s;
+  color: black;
 }
 /* .iconbtnn p{
   text-align: center;
@@ -173,59 +224,49 @@
   margin-top: 10px;
 }
 
-.who,
-.who-about{
+
+.who-about,
+.left-half,
+.right-half{
   display: flex;
   flex-direction:row-reverse;
-  background-color: rgb(255, 255, 255);
-}
-.who-about{
   background-color: #e8e8e8;
+  
 }
 
-.who img{
+.home-img{
   border-radius: 15%;
   float: right;
-  height: 25vh;
-  width : 20%;
+  height: 25%;
+  width : 25%;
   margin: 15px 15px;
 }
-.who-about img{
+
+.about-img{
   border-radius: 20%;
   float: right;
-  height: 45vh;
-  width : 50vh;
+  height: 35%;
+  width : 35%;
   margin: 10px 15px;
 } 
 
-.who h2{
-  text-align: left;
-}
-
 .text{
 margin-bottom: 20px;
-margin-top: 15px;
+margin-top: 20px;
 }
+
 .text h1{
   font-weight: bold;
 }
-.vison {
+
+.who,
+.right-half,
+.left-half,
+.middle-half {
   display: flex;
-  width: 100%;
+  padding: 1rem;
+  flex-direction:row-reverse;
   text-transform: capitalize;
-}
-
-.left-half {
-  background-color: rgb(212, 208, 208);
-  flex: 1;
-  padding: 1rem;
-}
-
-.right-half {
-  background-color: black;
-  flex: 1;
-  padding: 1rem;
-  color: white;
 }
 
 .intro{
@@ -234,11 +275,8 @@ margin-top: 15px;
   color: black;
  
 }
-.carouselspace img{
-  width: auto;
-  height: 75vh;
-  object-fit:fill;
-}
+
+
 /*************************info*************************/
  .info-content {
   display: flex;
@@ -399,22 +437,37 @@ margin-top: 15px;
 
 /*************************screen of services*************************/
 .home {
-  background-image:url(../images/11.jpg) ;
-  height: 60%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image:url(../images/services.jpg) ;
+  height: 70%; 
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  position: relative;
+}
+.Homee {
+  background-image:url(../images/h1.jpg) ;
+  height: 68%; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.ABOUT {
+  background-image:url(../images/about.jpg) ;
+  max-height: 70%; 
+  min-width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
 }
 
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 100%; 
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(102, 98, 98, 0.2);
+  
 }
 
 /*************************services*************************/
@@ -425,11 +478,9 @@ margin-top: 15px;
   justify-content: center;
   
 }
-.service p{
-font-size: 15px;
-}
-.service h5{
-  color: gold;
+
+.service h3{
+  color: goldenrod;
 }
 
 .service-item{
@@ -453,7 +504,7 @@ font-size: 15px;
 
 img.size-full.alignnone {
   margin-bottom: 1em;
-  margin-top: -2em;
+  margin-top: -3em;
 }
 /*************************contact us*************************/
 .wrapper{

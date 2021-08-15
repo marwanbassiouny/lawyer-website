@@ -3915,13 +3915,12 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  width: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  justify-content: center;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -5715,6 +5714,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  
 }
 
 .carousel.pointer-event {
@@ -5725,6 +5725,7 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 .carousel-inner::after {
   display: block;

@@ -5,6 +5,15 @@
   width : 25%;
   margin: 15px 15px;
 }
+
+.home-imagAR {
+  border-radius: 15%;
+  float: left;
+  height: 17%;
+  width : 17%;
+  margin: 15px 15px;
+}
+
 .about-imgAR{
     border-radius: 20%;
     float: left;

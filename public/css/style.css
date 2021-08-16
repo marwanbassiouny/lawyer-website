@@ -224,22 +224,32 @@
   margin-top: 10px;
 }
 
-
-.who-about,
-.right-half,
-.middle-half{
+section{
   display: flex;
   flex-direction:row-reverse;
   background-color: #e8e8e8;
-  
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.white{
+  display: flex;
+  flex-direction:row-reverse;
+  background-color: white;
+  text-transform: capitalize;
+  padding: 1rem;
 }
 
-.home-img{
+.home-img,
+.home-imag {
   border-radius: 15%;
   float: right;
   height: 25%;
   width : 25%;
   margin: 15px 15px;
+}
+.home-imag {
+  height: 17%;
+  width : 17%;
 }
 
 .about-img{
@@ -259,20 +269,20 @@ margin-top: 20px;
   font-weight: bold;
 }
 
-.who,
-.right-half,
-.left-half{
-  display: flex;
-  padding: 1rem;
-  flex-direction:row-reverse;
-  text-transform: capitalize;
-}
-
-.intro{
+/* .intro{
   width: auto;
   text-align: center;
   color: black;
- 
+} */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 
@@ -402,6 +412,9 @@ margin-top: 20px;
   margin: 5px 5px;
   transition: 1s;
 }
+.team p{
+  font-size: 18px;
+}
 .effect-height:after {
   position: absolute;
   content: "";
@@ -433,7 +446,11 @@ margin-top: 20px;
   opacity: 1;
 }
 
-
+.team-items:hover p{
+  color: black;
+  transition: 1s;
+  opacity: 1;
+}
 /*************************screen of services*************************/
 .home {
   background-image:url(../images/services.jpg) ;

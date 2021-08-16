@@ -226,8 +226,8 @@
 
 
 .who-about,
-.left-half,
-.right-half{
+.right-half,
+.middle-half{
   display: flex;
   flex-direction:row-reverse;
   background-color: #e8e8e8;
@@ -261,8 +261,7 @@ margin-top: 20px;
 
 .who,
 .right-half,
-.left-half,
-.middle-half {
+.left-half{
   display: flex;
   padding: 1rem;
   flex-direction:row-reverse;

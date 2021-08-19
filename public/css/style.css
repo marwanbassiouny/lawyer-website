@@ -12,58 +12,7 @@
   width : 75px;
   
  }
-/* 
-.carouselspace img{
-  object-fit: fill;
-  height:565px; 
-}
-.carousel-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
 
-.text-carousel::before{
-  opacity: 1;
-}
-.carousel-text::after{
-  background-color: #13e961;
-  opacity: 1;
-  transition: .1s; 
-} */
-
-/* .wrapperr {
- 
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.typing-demo {
-  
-  width: 7ch;
-  animation: typing 3s steps(7), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 4em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-} */
 .navbar-nav a {
   font-size: 25px;
   color: black;
@@ -226,14 +175,14 @@
 
 section{
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction:row;
   background-color: #e8e8e8;
   text-transform: capitalize;
   padding: 1rem;
 }
 .white{
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction:row;
   background-color: white;
   text-transform: capitalize;
   padding: 1rem;
@@ -243,37 +192,61 @@ section{
 .home-imag {
   border-radius: 15%;
   float: right;
-  height: 25%;
-  width : 25%;
-  margin: 15px 15px;
-}
-.home-imag {
-  height: 17%;
-  width : 17%;
+  height: 30vh;
+  width : 40vh;
+   /* margin:5px  */
 }
 
 .about-img{
   border-radius: 20%;
   float: right;
-  height: 35%;
-  width : 35%;
-  margin: 10px 15px;
+  height: 300px;
+  width : 325px;
+  /* margin: 35px; */
 } 
+
+.home-imag {
+  height: 17%;
+  width : 17%;
+}
+.home-imgAR,
+.home-imagAR {
+  border-radius: 15%;
+  float: left;
+  height: 30vh;
+  width : 40vh;
+   margin: 15px
+}
+.home-imagAR {
+  height: 17%;
+  width : 17%;
+}
+
+.about-imgAR{
+    border-radius: 20%;
+    float: left;
+    height: 330px;
+    width : 365px;
+  }
 
 .text{
 margin-bottom: 20px;
 margin-top: 20px;
 }
 
-.text h1{
+.text h1
+ h2{
   font-weight: bold;
 }
-
+.text  li{
+  font-size: 2ch;
+}
 /* .intro{
   width: auto;
   text-align: center;
   color: black;
 } */
+
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -482,10 +455,114 @@ margin-top: 20px;
   height: 100%; 
   top: 0;
   left: 0;
-  background-color: rgba(102, 98, 98, 0.2);
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
   
 }
 
+.containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerr .box {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.containerr .box .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+}
+.containerr .box .title .block {
+  width: 0%;
+  height: inherit;
+  background: gold;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+  justify-content: center;
+}
+.containerr .box .title h1 {
+  /* font-family: 'Poppins'; */
+  color: #fff;
+  font-size: 2rem;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+.containerr .box .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.containerr .box .role .block {
+  width: 0%;
+  height: inherit;
+  background: white;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  display: flex;
+  align-items: center;
+}
+.containerr .box .role p {
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  font-weight: 150;
+  font-family: 'Lato';
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.5;
+  align-items: center;
+}
+
+@keyframes mainBlock {
+  0% {
+      width: 0%;
+      left: 0;
+  }
+  50% {
+      width: 100%;
+      left: 0;
+  }
+  100% {
+      width: 0;
+      left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes secFadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 /*************************services*************************/
 
 .services {

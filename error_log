@@ -1,0 +1,55 @@
+[06-Sep-2021 22:08:40 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home3/zayantes/public_html/contact.php on line 55
+[06-Sep-2021 22:09:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home3/zayantes/public_html/contact.php on line 55
+[06-Sep-2021 22:09:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home3/zayantes/public_html/contact.php on line 55
+[06-Sep-2021 22:21:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function </td>
+	</tr>
+	<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>() in /home3/zayantes/public_html/contact.php:38
+Stack trace:
+#0 {main}
+  thrown in /home3/zayantes/public_html/contact.php on line 38
+[06-Sep-2021 22:22:08 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function </td>
+	</tr>
+	<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>() in /home3/zayantes/public_html/contact.php:38
+Stack trace:
+#0 {main}
+  thrown in /home3/zayantes/public_html/contact.php on line 38
+[06-Sep-2021 22:24:02 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home3/zayantes/public_html/contact.php on line 13
+[06-Sep-2021 22:24:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function </td>
+	</tr>
+	<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>() in /home3/zayantes/public_html/contact.php:39
+Stack trace:
+#0 {main}
+  thrown in /home3/zayantes/public_html/contact.php on line 39
+[06-Sep-2021 22:25:11 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function </td>
+	</tr>
+	<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>() in /home3/zayantes/public_html/contact.php:39
+Stack trace:
+#0 {main}
+  thrown in /home3/zayantes/public_html/contact.php on line 39
+[06-Sep-2021 22:25:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function </td>
+	</tr>
+	<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>() in /home3/zayantes/public_html/contact.php:39
+Stack trace:
+#0 {main}
+  thrown in /home3/zayantes/public_html/contact.php on line 39
+[07-Sep-2021 11:48:22 America/Chicago] PHP Parse error:  syntax error, unexpected 'color' (T_STRING), expecting ';' or ',' in /home3/zayantes/public_html/contact.php on line 60
+[07-Sep-2021 12:50:22 America/Chicago] PHP Parse error:  syntax error, unexpected '$Text' (T_VARIABLE) in /home3/zayantes/public_html/contact.php on line 62
+[07-Sep-2021 12:51:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 12:51:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 12:52:12 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 12:52:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 12:54:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 12:56:46 America/Chicago] PHP Parse error:  syntax error, unexpected '$headers' (T_VARIABLE) in /home3/zayantes/public_html/contact.php on line 100
+[07-Sep-2021 12:57:31 America/Chicago] PHP Parse error:  syntax error, unexpected 'padding' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 13:06:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'you' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92
+[07-Sep-2021 13:10:25 America/Chicago] PHP Parse error:  syntax error, unexpected 'you' (T_STRING) in /home3/zayantes/public_html/contact.php on line 92

@@ -1,0 +1,9 @@
+CACHE MANIFEST
+#V0.0.2 change this to force update
+
+CACHE:
+./Home.html
+./HomeAR.html
+public/images/favicon.ico
+public/images/logo.jpg
+public/css/style.css

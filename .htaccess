@@ -1,0 +1,3 @@
+
+DirectoryIndex Home.html
+addType text/cache-manifest .appcache
